@@ -1,0 +1,358 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "skirmish map",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "HelloWorldIntent",
+                  "slots": [],
+                  "samples": [
+                      "hello",
+                      "how are you",
+                      "say hi world",
+                      "say hi",
+                      "hi",
+                      "say hello world",
+                      "say hello"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "moveUnit",
+                  "slots": [
+                      {
+                          "name": "count",
+                          "type": "AMAZON.NUMBER"
+                      },
+                      {
+                          "name": "color",
+                          "type": "Colors"
+                      },
+                      {
+                          "name": "type",
+                          "type": "UnitType"
+                      },
+                      {
+                          "name": "source",
+                          "type": "Location"
+                      },
+                      {
+                          "name": "destination",
+                          "type": "Location"
+                      }
+                  ],
+                  "samples": [
+                      "move {color} {type} {destination}",
+                      "move {count} {color} {type} {destination}",
+                      "move {count} {type} {destination}",
+                      "move {type} {destination}",
+                      "send the {type} to {destination}",
+                      "send {type} to {destination}",
+                      "send {count} of the {type} to {destination}",
+                      "send the {color} {type} to {destination}",
+                      "send {count} the {color} to {destination}",
+                      "send {count} the {color} {type} to {destination}",
+                      "send {count} the {type} to {destination}",
+                      "move {count} {color} {type} to {destination}",
+                      "move the {color} {type} to {destination}",
+                      "move the {type} to {destination}",
+                      "move {color} {type} to {destination}",
+                      "move {color} to {destination}",
+                      "move {color} {type} from {source} to {destination}",
+                      "move {count} {type} from {source} to {destination}",
+                      "bring {count} {type} to {destination}",
+                      "send {count} {type} to {destination}",
+                      "move {count} {type} to {destination}",
+                      "move {type} from {source} to {destination}",
+                      "move {count} {color} {type} from {source} to {destination}"
+                  ]
+              },
+              {
+                  "name": "typeOnly",
+                  "slots": [
+                      {
+                          "name": "type",
+                          "type": "UnitType"
+                      }
+                  ],
+                  "samples": [
+                      "{type}"
+                  ]
+              },
+              {
+                  "name": "locationOnly",
+                  "slots": [
+                      {
+                          "name": "location",
+                          "type": "Location"
+                      }
+                  ],
+                  "samples": [
+                      "{location}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "UnitType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "everything",
+                              "synonyms": [
+                                  "all of them",
+                                  "all tokens",
+                                  "all icons",
+                                  "all troops",
+                                  "everyone"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "sword",
+                              "synonyms": [
+                                  "knives",
+                                  "knife",
+                                  "soldiers",
+                                  "soldier",
+                                  "swords"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "tower",
+                              "synonyms": [
+                                  "buildings",
+                                  "building",
+                                  "battlements",
+                                  "battlement",
+                                  "fortresses",
+                                  "fortress",
+                                  "towers"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "horse",
+                              "synonyms": [
+                                  "officers",
+                                  "officer",
+                                  "knights",
+                                  "knight",
+                                  "horses"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "wizard",
+                              "synonyms": [
+                                  "sorcerors",
+                                  "sorcerer",
+                                  "magicians",
+                                  "magician",
+                                  "mages",
+                                  "mage",
+                                  "wizards"
+                              ]
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "Location",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "here"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "lum bend",
+                              "synonyms": [
+                                  "lum"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "gorrick"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "pullum east",
+                              "synonyms": [
+                                  "east pullum"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "pullum west",
+                              "synonyms": [
+                                  "west pullum"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "upton marsh",
+                              "synonyms": [
+                                  "upton"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "inspeth"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "flack"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "dead coast"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "upper diffle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "clelan",
+                              "synonyms": [
+                                  "cleveland",
+                                  "kleelun",
+                                  "cleelan"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "saffid east",
+                              "synonyms": [
+                                  "east safford",
+                                  "safford east",
+                                  "saffid island east",
+                                  "east saffid island",
+                                  "east saffid"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "kell point",
+                              "synonyms": [
+                                  "point kell island",
+                                  "kell island point",
+                                  "point",
+                                  "point kell"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "kell north",
+                              "synonyms": [
+                                  "kell island north",
+                                  "north kell island",
+                                  "north kell"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "diffle"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "appleham"
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "saffid west",
+                              "synonyms": [
+                                  "safford west",
+                                  "west safford",
+                                  "saffid island west",
+                                  "west saffid island",
+                                  "west saffid"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "kell south",
+                              "synonyms": [
+                                  "kell island south",
+                                  "south kell island",
+                                  "south kell"
+                              ]
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "Colors",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "blue",
+                              "synonyms": [
+                                  "blues"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "green",
+                              "synonyms": [
+                                  "greens"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "red",
+                              "synonyms": [
+                                  "reds"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

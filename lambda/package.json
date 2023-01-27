@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "alexa-playcanvas-integration",
+  "author": "Chris Subagio",
+  "license": "MIT",
+  "description": "A generic Alexa skill endpoint for hosting games developed in Play Canvas",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0",
+    "ask-sdk-dynamodb-persistence-adapter": "^2.12.0"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Play Canvas Starter",
+          "summary": "A working generic implementation of intagrating a Play Canvas game with Alexa",
+          "description": "Look for documentation on the Alexa Skills Kit in general, and at github.com/csubagio/alexa-playcanvas to understand how to modify the skill to support your game!",
+          "examplePhrases": [
+            "Alexa, open Play Canvas Starter"
+          ],
+          "keywords": ["game", "games", "screen", "graphics"]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Explain to the the Alexa team broadly how to start your game and how it works, so they can verify that it's running correctly across a range of Alexa devices.",
+      "category": "GAMES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_HTML"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}
